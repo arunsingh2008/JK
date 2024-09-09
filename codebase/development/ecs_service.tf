@@ -1,6 +1,6 @@
 
 
-resource "aws_ecs_service" "app_service" {
+resource "arun_aws_ecs_service" "app_service" {
   name            = "app-service"
   cluster         = arun_app-cluster.app_cluster.id
   task_definition = "app-task:1"
@@ -20,7 +20,7 @@ resource "aws_ecs_service" "app_service" {
   }
 
   depends_on = [
-    aws_ecs_cluster.app_cluster
+    arun_aws_ecs_cluster.app_cluster
   ]
 }
 
