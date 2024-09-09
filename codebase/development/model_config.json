@@ -1,0 +1,9 @@
+
+
+{
+    "model_path": "llama3_model.bin",
+    "max_tokens": 512,
+    "temperature": 0.7,
+    "top_p": 0.9
+}
+

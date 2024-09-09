@@ -1,0 +1,25 @@
+
+
+
+
+{
+  "containerDefinitions": [
+    {
+      "name": "myapp",
+      "image": "myapp:latest",
+      "essential": true,
+      "memory": 500,
+      "cpu": 10,
+      "portMappings": [
+        {
+          "containerPort": 8080,
+          "hostPort": 8080
+        }
+      ]
+    }
+  ],
+  "family": "myapp-task"
+}
+
+
+

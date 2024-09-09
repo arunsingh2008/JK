@@ -1,0 +1,13 @@
+
+
+
+get:
+  summary: 'Get sample data'
+  description: 'This endpoint returns sample data.'
+  responses:
+    200:
+      description: 'A list of sample data'
+      examples:
+        application/json: { 'data': 'Sample Data' }
+
+

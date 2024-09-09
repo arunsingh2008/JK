@@ -1,0 +1,22 @@
+
+
+{
+  "name": "secure-api-communication",
+  "version": "1.0.0",
+  "description": "A project to demonstrate secure API communication",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "https": "^1.0.0",
+    "fs": "^0.0.1-security",
+    "express-basic-auth": "^1.2.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+

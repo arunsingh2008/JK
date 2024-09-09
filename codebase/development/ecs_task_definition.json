@@ -1,0 +1,29 @@
+
+
+{
+  "family": "app-task",
+  "containerDefinitions": [
+    {
+      "name": "app-container",
+      "image": "your-docker-image",
+      "essential": true,
+      "memory": 512,
+      "cpu": 256,
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "hostPort": 80
+        }
+      ]
+    }
+  ],
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "networkMode": "awsvpc",
+  "memory": "512",
+  "cpu": "256",
+  "executionRoleArn": "arn:aws:iam::your-account-id:role/ecsTaskExecutionRole"
+}
+
+
