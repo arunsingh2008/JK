@@ -2,7 +2,7 @@
 
 resource "aws_ecs_service" "app_service" {
   name            = "app-service"
-  cluster         = aws_ecs_cluster.app_cluster.id
+  cluster         = arun_app-cluster.app_cluster.id
   task_definition = "app-task:1"
   desired_count   = 2
   launch_type     = "FARGATE"
